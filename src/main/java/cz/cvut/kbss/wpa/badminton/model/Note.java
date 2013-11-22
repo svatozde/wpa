@@ -27,6 +27,10 @@ public class Note extends AbstractEntity{
     
     @OneToMany(mappedBy = "note")
     private List<Set> sets;
+    
+    protected int number;
+    
+    protected int score;
 
     /**
      * @return the player
@@ -69,5 +73,22 @@ public class Note extends AbstractEntity{
     public void setSets(List<Set> sets) {
         this.sets = sets;
     }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+    
     
 }
