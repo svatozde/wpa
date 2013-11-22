@@ -9,12 +9,14 @@ package cz.cvut.kbss.wpa.badminton.model;
 import cz.cvut.kbss.wpa.model.AbstractEntity;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 /**
  *
  * @author zdeněk
  */
 @Entity
+@Table (name = "match_sets")
 public class Set extends AbstractEntity {
    
  
@@ -24,6 +26,8 @@ public class Set extends AbstractEntity {
     
     
     private int score;
+    
+    protected int number;
 
    
 
@@ -41,6 +45,23 @@ public class Set extends AbstractEntity {
         this.score = score;
     }
 
+
+
+    public Note getNote() {
+        return note;
+    }
+
+    public void setNote(Note note) {
+        this.note = note;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
  
     
 }
