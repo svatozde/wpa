@@ -24,7 +24,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @author zdeněk
  */
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 //@DiscriminatorOptions(force=true)
 @DiscriminatorColumn(discriminatorType = DiscriminatorType.STRING, name = "type", length = 20)
@@ -65,7 +65,7 @@ public class User extends AbstractEntity {
      * @param password the password to set
      */
     public void setPassword(String password) {
-        this.password = password;
+        this.password = this.provider.computeHash(password);
     }
 
     /**
