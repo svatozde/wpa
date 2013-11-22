@@ -30,6 +30,26 @@ public class Proposal extends AbstractEntity{
     
     @Temporal(javax.persistence.TemporalType.DATE)
     private Date propDate;
+    
+    protected boolean matchPlayed;
+    
+    protected boolean matchAgreed;
+
+    public boolean isMatchPlayed() {
+        return matchPlayed;
+    }
+
+    public void setMatchPlayed(boolean matchPlayed) {
+        this.matchPlayed = matchPlayed;
+    }
+
+    public boolean isMatchAgreed() {
+        return matchAgreed;
+    }
+
+    public void setMatchAgreed(boolean matchAgreed) {
+        this.matchAgreed = matchAgreed;
+    }
 
     /**
      * @return the place
