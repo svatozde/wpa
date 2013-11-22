@@ -26,7 +26,10 @@ public class Match extends AbstractEntity {
     
     @ManyToOne
     private League league;
-
+    
+    @OneToMany(mappedBy="match")
+    private List<Proposal> proposals;
+    
     /**
      * @return the notes
      */
@@ -53,6 +56,20 @@ public class Match extends AbstractEntity {
      */
     public void setLeague(League league) {
         this.league = league;
+    }
+
+    /**
+     * @return the proposals
+     */
+    public List<Proposal> getProposals() {
+        return proposals;
+    }
+
+    /**
+     * @param proposals the proposals to set
+     */
+    public void setProposals(List<Proposal> proposals) {
+        this.proposals = proposals;
     }
     
 

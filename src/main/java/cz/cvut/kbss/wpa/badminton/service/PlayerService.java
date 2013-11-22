@@ -16,7 +16,7 @@ import java.util.List;
  */
 public interface PlayerService {
     
-    public void createPlayerDTO();
+    public void createPlayerDTO(PlayerDTO dto);
     
     public PlayerDTO getPlayer(Long id);
     
