@@ -7,11 +7,14 @@
 package cz.cvut.kbss.wpa.badminton.model;
 
 import cz.cvut.kbss.wpa.model.AbstractEntity;
+import java.util.Date;
 import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 /**
  *
@@ -29,6 +32,14 @@ public class League extends AbstractEntity {
     
     @OneToMany(mappedBy = "league")
     private List<Enroll> enrolls;
+    
+    protected String name;
+    
+    @Temporal(TemporalType.DATE)
+    protected Date leagueStart;
+    
+    @Temporal(TemporalType.DATE)
+    protected Date leagueEnd;
 
     /**
      * @return the matches
@@ -71,5 +82,30 @@ public class League extends AbstractEntity {
     public void setEnrolls(List<Enroll> enrolls) {
         this.enrolls = enrolls;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Date getStart() {
+        return leagueStart;
+    }
+
+    public void setStart(Date start) {
+        this.leagueStart = start;
+    }
+
+    public Date getEnd() {
+        return leagueEnd;
+    }
+
+    public void setEnd(Date end) {
+        this.leagueEnd = end;
+    }
+    
     
 }
