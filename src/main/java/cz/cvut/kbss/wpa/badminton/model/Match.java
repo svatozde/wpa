@@ -8,16 +8,17 @@ package cz.cvut.kbss.wpa.badminton.model;
 
 import cz.cvut.kbss.wpa.model.AbstractEntity;
 import java.util.List;
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
 /**
  *
  * @author zdeněk
  */
 @Entity
+@Table(name = "matches")
 public class Match extends AbstractEntity {
     
     
