@@ -28,6 +28,8 @@ public class Place extends AbstractEntity {
     private List<Proposal> proposals;
     
     private String name;
+    
+    protected String adress;
 
     /**
      * @return the leagues
@@ -70,5 +72,14 @@ public class Place extends AbstractEntity {
     public void setName(String name) {
         this.name = name;
     }
+
+    public String getAdress() {
+        return adress;
+    }
+
+    public void setAdress(String adress) {
+        this.adress = adress;
+    }
+    
     
 }
