@@ -10,6 +10,10 @@ package cz.cvut.kbss.wpa.badminton.dto;
  *
  * @author jan
  */
-public class AdminDTO extends AbstractDTO{
+public class AdminDTO extends UserDTO{
+
+    public AdminDTO(Long id, String username, String password) {
+        super(id, username, password);
+    }
     
 }

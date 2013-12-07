@@ -12,4 +12,29 @@ package cz.cvut.kbss.wpa.badminton.dto;
  */
 public class NotificationDTO extends AbstractDTO{
     
+    protected PlayerDTO player;
+    protected String message;
+
+    public NotificationDTO(Long id, PlayerDTO player, String message) {
+        super(id);
+        this.player = player;
+        this.message = message;
+    }
+
+    public PlayerDTO getPlayer() {
+        return player;
+    }
+
+    public void setPlayer(PlayerDTO player) {
+        this.player = player;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+    
 }
