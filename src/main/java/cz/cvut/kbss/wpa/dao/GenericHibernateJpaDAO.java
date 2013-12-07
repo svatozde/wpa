@@ -1,6 +1,6 @@
 package cz.cvut.kbss.wpa.dao;
 
-import cz.cvut.kbss.wpa.model.AbstractEntity;
+import cz.cvut.kbss.wpa.badminton.model.AbstractEntity;
 import java.io.Serializable;
 import java.util.List;
 

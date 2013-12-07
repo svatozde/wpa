@@ -6,7 +6,6 @@
 
 package cz.cvut.kbss.wpa.badminton.model;
 
-import cz.cvut.kbss.wpa.model.AbstractEntity;
 import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.JoinTable;

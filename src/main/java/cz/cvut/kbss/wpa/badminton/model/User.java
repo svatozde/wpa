@@ -5,7 +5,6 @@
  */
 package cz.cvut.kbss.wpa.badminton.model;
 
-import cz.cvut.kbss.wpa.model.AbstractEntity;
 import cz.cvut.kbss.wpa.provider.HashProvider;
 
 import javax.persistence.Column;
