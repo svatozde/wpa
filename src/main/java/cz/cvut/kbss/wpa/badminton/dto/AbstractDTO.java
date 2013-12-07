@@ -1,4 +1,4 @@
-package cz.cvut.kbss.wpa.dto;
+package cz.cvut.kbss.wpa.badminton.dto;
 
 import java.io.Serializable;
 

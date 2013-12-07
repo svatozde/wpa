@@ -6,7 +6,6 @@
 
 package cz.cvut.kbss.wpa.badminton.dto;
 
-import cz.cvut.kbss.wpa.dto.AbstractDTO;
 import java.util.List;
 
 /**
