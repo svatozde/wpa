@@ -6,15 +6,15 @@
 
 package cz.cvut.kbss.wpa.badminton.service;
 
-import cz.cvut.kbss.wpa.badminton.dto.UserDTO;
+import cz.cvut.kbss.wpa.badminton.dto.LeagueDTO;
 
 /**
  *
  * @author jan
  */
-public class UserService extends AbstractService implements IUserService{
+public class LeagueService extends AbstractService implements ILeagueService{
 
-    public void createUser(UserDTO user) {
+    public void createLeague(LeagueDTO league) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

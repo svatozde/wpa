@@ -6,15 +6,15 @@
 
 package cz.cvut.kbss.wpa.badminton.service;
 
-import cz.cvut.kbss.wpa.badminton.dto.UserDTO;
+import cz.cvut.kbss.wpa.badminton.dto.NotificationDTO;
 
 /**
  *
  * @author jan
  */
-public class UserService extends AbstractService implements IUserService{
+public class NotificationService extends AbstractService implements INotificationService{
 
-    public void createUser(UserDTO user) {
+    public void createNotification(NotificationDTO notification) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
