@@ -6,10 +6,14 @@
 
 package cz.cvut.kbss.wpa.badminton.service;
 
+import cz.cvut.kbss.wpa.badminton.dto.SetDTO;
+
 /**
  *
  * @author jan
  */
-public interface NoteService {
+public interface ISetService {
+    
+    public void createSet(SetDTO set);
     
 }

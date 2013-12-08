@@ -6,10 +6,14 @@
 
 package cz.cvut.kbss.wpa.badminton.service;
 
+import cz.cvut.kbss.wpa.badminton.dto.UserDTO;
+
 /**
  *
  * @author jan
  */
-public interface NotificationService {
+public interface IUserService {
+    
+    public void createUser(UserDTO user);
     
 }

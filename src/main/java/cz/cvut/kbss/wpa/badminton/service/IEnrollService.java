@@ -6,10 +6,14 @@
 
 package cz.cvut.kbss.wpa.badminton.service;
 
+import cz.cvut.kbss.wpa.badminton.dto.EnrollDTO;
+
 /**
  *
  * @author jan
  */
-public interface PlaceService {
+public interface IEnrollService {
+    
+    public void createEnroll(EnrollDTO enroll);
     
 }

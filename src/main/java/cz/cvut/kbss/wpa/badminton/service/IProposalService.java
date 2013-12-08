@@ -6,10 +6,14 @@
 
 package cz.cvut.kbss.wpa.badminton.service;
 
+import cz.cvut.kbss.wpa.badminton.dto.ProposalDTO;
+
 /**
  *
  * @author jan
  */
-public interface LeagueService {
+public interface IProposalService {
+    
+    public void createProposal(ProposalDTO proposal);
     
 }

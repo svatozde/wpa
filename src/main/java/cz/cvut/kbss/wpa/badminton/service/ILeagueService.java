@@ -6,10 +6,14 @@
 
 package cz.cvut.kbss.wpa.badminton.service;
 
+import cz.cvut.kbss.wpa.badminton.dto.LeagueDTO;
+
 /**
  *
  * @author jan
  */
-public interface MatchService {
+public interface ILeagueService {
+    
+    public void createLeague(LeagueDTO league);
     
 }

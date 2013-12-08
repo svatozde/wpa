@@ -6,10 +6,14 @@
 
 package cz.cvut.kbss.wpa.badminton.service;
 
+import cz.cvut.kbss.wpa.badminton.dto.MatchDTO;
+
 /**
  *
  * @author jan
  */
-public interface AdminService {
+public interface IMatchService {
+    
+    public void createMatch(MatchDTO match);
     
 }

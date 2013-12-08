@@ -6,10 +6,14 @@
 
 package cz.cvut.kbss.wpa.badminton.service;
 
+import cz.cvut.kbss.wpa.badminton.dto.NoteDTO;
+
 /**
  *
  * @author jan
  */
-public interface SetService {
+public interface INoteService {
+    
+    public void createNote(NoteDTO note);
     
 }

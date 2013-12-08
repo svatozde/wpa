@@ -6,10 +6,14 @@
 
 package cz.cvut.kbss.wpa.badminton.service;
 
+import cz.cvut.kbss.wpa.badminton.dto.AdminDTO;
+
 /**
  *
  * @author jan
  */
-public interface ProposalService {
+public interface IAdminService {
+    
+    public void createAdmin(AdminDTO admin);
     
 }

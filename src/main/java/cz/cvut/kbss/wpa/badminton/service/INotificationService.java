@@ -6,10 +6,14 @@
 
 package cz.cvut.kbss.wpa.badminton.service;
 
+import cz.cvut.kbss.wpa.badminton.dto.NotificationDTO;
+
 /**
  *
  * @author jan
  */
-public interface EnrollService {
+public interface INotificationService {
+    
+    public void createNotification(NotificationDTO notification);
     
 }
