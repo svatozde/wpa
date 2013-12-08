@@ -14,7 +14,7 @@ import java.util.List;
  *
  * @author zdeněk
  */
-public interface PlayerService {
+public interface PlayerService extends UserService{
     
     public void createPlayerDTO(PlayerDTO dto);
     
