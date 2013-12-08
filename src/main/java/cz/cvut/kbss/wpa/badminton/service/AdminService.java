@@ -14,7 +14,7 @@ import cz.cvut.kbss.wpa.badminton.dto.AdminDTO;
  */
 public class AdminService extends UserService implements IAdminService{
 
-    public void createAdmin(AdminDTO admin) {
+    public AdminDTO createAdmin(AdminDTO admin) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

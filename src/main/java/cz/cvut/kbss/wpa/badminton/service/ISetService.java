@@ -14,6 +14,6 @@ import cz.cvut.kbss.wpa.badminton.dto.SetDTO;
  */
 public interface ISetService {
     
-    public void createSet(SetDTO set);
+    public SetDTO createSet(SetDTO set);
     
 }

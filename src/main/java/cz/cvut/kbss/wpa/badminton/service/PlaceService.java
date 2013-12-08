@@ -14,7 +14,7 @@ import cz.cvut.kbss.wpa.badminton.dto.PlaceDTO;
  */
 public class PlaceService extends AbstractService implements IPlaceService{
 
-    public void createPlace(PlaceDTO place) {
+    public PlaceDTO createPlace(PlaceDTO place) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

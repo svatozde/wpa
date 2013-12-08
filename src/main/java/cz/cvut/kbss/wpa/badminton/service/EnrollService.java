@@ -14,7 +14,7 @@ import cz.cvut.kbss.wpa.badminton.dto.EnrollDTO;
  */
 public class EnrollService extends AbstractService implements IEnrollService{
 
-    public void createEnroll(EnrollDTO enroll) {
+    public EnrollDTO createEnroll(EnrollDTO enroll) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

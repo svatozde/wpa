@@ -14,6 +14,6 @@ import cz.cvut.kbss.wpa.badminton.dto.NoteDTO;
  */
 public interface INoteService {
     
-    public void createNote(NoteDTO note);
+    public NoteDTO createNote(NoteDTO note);
     
 }

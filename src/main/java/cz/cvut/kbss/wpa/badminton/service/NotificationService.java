@@ -14,7 +14,7 @@ import cz.cvut.kbss.wpa.badminton.dto.NotificationDTO;
  */
 public class NotificationService extends AbstractService implements INotificationService{
 
-    public void createNotification(NotificationDTO notification) {
+    public NotificationDTO createNotification(NotificationDTO notification) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

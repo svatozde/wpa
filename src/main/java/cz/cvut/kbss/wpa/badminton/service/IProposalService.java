@@ -6,6 +6,7 @@
 
 package cz.cvut.kbss.wpa.badminton.service;
 
+import cz.cvut.kbss.wpa.badminton.dto.PlayerDTO;
 import cz.cvut.kbss.wpa.badminton.dto.ProposalDTO;
 
 /**
@@ -14,6 +15,6 @@ import cz.cvut.kbss.wpa.badminton.dto.ProposalDTO;
  */
 public interface IProposalService {
     
-    public void createProposal(ProposalDTO proposal);
+    public ProposalDTO createProposal(ProposalDTO proposal);
     
 }

@@ -14,6 +14,6 @@ import cz.cvut.kbss.wpa.badminton.dto.EnrollDTO;
  */
 public interface IEnrollService {
     
-    public void createEnroll(EnrollDTO enroll);
+    public EnrollDTO createEnroll(EnrollDTO enroll);
     
 }

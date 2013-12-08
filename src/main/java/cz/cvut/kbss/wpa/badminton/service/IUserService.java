@@ -14,6 +14,6 @@ import cz.cvut.kbss.wpa.badminton.dto.UserDTO;
  */
 public interface IUserService {
     
-    public void createUser(UserDTO user);
+    public UserDTO createUser(UserDTO user);
     
 }

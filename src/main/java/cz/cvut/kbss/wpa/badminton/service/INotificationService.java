@@ -14,6 +14,6 @@ import cz.cvut.kbss.wpa.badminton.dto.NotificationDTO;
  */
 public interface INotificationService {
     
-    public void createNotification(NotificationDTO notification);
+    public NotificationDTO createNotification(NotificationDTO notification);
     
 }

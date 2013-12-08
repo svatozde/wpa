@@ -14,6 +14,6 @@ import cz.cvut.kbss.wpa.badminton.dto.LeagueDTO;
  */
 public interface ILeagueService {
     
-    public void createLeague(LeagueDTO league);
+    public LeagueDTO createLeague(LeagueDTO league);
     
 }

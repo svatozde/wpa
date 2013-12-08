@@ -14,7 +14,7 @@ import cz.cvut.kbss.wpa.badminton.dto.ProposalDTO;
  */
 public class ProposalService extends AbstractService implements IProposalService{
 
-    public void createProposal(ProposalDTO proposal) {
+    public ProposalDTO createProposal(ProposalDTO proposal) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

@@ -14,7 +14,7 @@ import cz.cvut.kbss.wpa.badminton.dto.NoteDTO;
  */
 public class NoteService extends AbstractService implements INoteService{
 
-    public void createNote(NoteDTO note) {
+    public NoteDTO createNote(NoteDTO note) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

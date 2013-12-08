@@ -14,6 +14,6 @@ import cz.cvut.kbss.wpa.badminton.dto.PlaceDTO;
  */
 public interface IPlaceService {
     
-    public void createPlace(PlaceDTO place);
+    public PlaceDTO createPlace(PlaceDTO place);
     
 }

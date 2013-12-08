@@ -16,7 +16,7 @@ import java.util.List;
  */
 public interface IPlayerService extends IUserService{
     
-    public void createPlayer(PlayerDTO player);
+    public PlayerDTO createPlayer(PlayerDTO player);
     
     public PlayerDTO getPlayer(Long id);
     

@@ -14,6 +14,6 @@ import cz.cvut.kbss.wpa.badminton.dto.AdminDTO;
  */
 public interface IAdminService {
     
-    public void createAdmin(AdminDTO admin);
+    public AdminDTO createAdmin(AdminDTO admin);
     
 }

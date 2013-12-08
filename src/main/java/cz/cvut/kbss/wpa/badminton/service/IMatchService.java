@@ -14,6 +14,6 @@ import cz.cvut.kbss.wpa.badminton.dto.MatchDTO;
  */
 public interface IMatchService {
     
-    public void createMatch(MatchDTO match);
+    public MatchDTO createMatch(MatchDTO match);
     
 }

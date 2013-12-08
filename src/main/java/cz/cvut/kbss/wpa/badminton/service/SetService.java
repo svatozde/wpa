@@ -14,7 +14,7 @@ import cz.cvut.kbss.wpa.badminton.dto.SetDTO;
  */
 public class SetService extends AbstractService implements ISetService{
 
-    public void createSet(SetDTO set) {
+    public SetDTO createSet(SetDTO set) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

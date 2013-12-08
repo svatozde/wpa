@@ -14,7 +14,7 @@ import cz.cvut.kbss.wpa.badminton.dto.UserDTO;
  */
 public class UserService extends AbstractService implements IUserService{
 
-    public void createUser(UserDTO user) {
+    public UserDTO createUser(UserDTO user) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

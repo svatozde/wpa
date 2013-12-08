@@ -17,10 +17,10 @@ import java.util.List;
  */
 public class PlayerService extends UserService implements IPlayerService {    
     
-    public void createPlayer(PlayerDTO dto) {
+    public PlayerDTO createPlayer(PlayerDTO dto) {
        Player p = new Player();
        genericDAOIface.saveOrUpdate(p);
-       
+       throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public PlayerDTO getPlayer(Long id) {

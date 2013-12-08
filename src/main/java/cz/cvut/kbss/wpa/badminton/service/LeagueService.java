@@ -14,7 +14,7 @@ import cz.cvut.kbss.wpa.badminton.dto.LeagueDTO;
  */
 public class LeagueService extends AbstractService implements ILeagueService{
 
-    public void createLeague(LeagueDTO league) {
+    public LeagueDTO createLeague(LeagueDTO league) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
