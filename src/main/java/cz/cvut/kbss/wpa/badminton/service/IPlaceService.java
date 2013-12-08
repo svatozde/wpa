@@ -7,6 +7,7 @@
 package cz.cvut.kbss.wpa.badminton.service;
 
 import cz.cvut.kbss.wpa.badminton.dto.PlaceDTO;
+import java.util.List;
 
 /**
  *
@@ -15,5 +16,7 @@ import cz.cvut.kbss.wpa.badminton.dto.PlaceDTO;
 public interface IPlaceService {
     
     public PlaceDTO createPlace(PlaceDTO place);
+    
+    public List<PlaceDTO> getAllPlaces();
     
 }

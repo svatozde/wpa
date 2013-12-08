@@ -7,6 +7,7 @@
 package cz.cvut.kbss.wpa.badminton.service;
 
 import cz.cvut.kbss.wpa.badminton.dto.PlaceDTO;
+import java.util.List;
 
 /**
  *
@@ -15,6 +16,10 @@ import cz.cvut.kbss.wpa.badminton.dto.PlaceDTO;
 public class PlaceService extends AbstractService implements IPlaceService{
 
     public PlaceDTO createPlace(PlaceDTO place) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public List<PlaceDTO> getAllPlaces() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
