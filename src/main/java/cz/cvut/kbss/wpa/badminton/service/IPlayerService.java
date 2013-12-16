@@ -8,15 +8,18 @@ package cz.cvut.kbss.wpa.badminton.service;
 
 import cz.cvut.kbss.wpa.badminton.dto.MatchDTO;
 import cz.cvut.kbss.wpa.badminton.dto.PlayerDTO;
+import cz.cvut.kbss.wpa.badminton.exception.WPAException;
 import java.util.List;
+import org.springframework.stereotype.Component;
 
 /**
  *
  * @author zdeněk
  */
-public interface IPlayerService extends IUserService{
+
+public interface IPlayerService {
     
-    public PlayerDTO createPlayer(PlayerDTO player);
+    public void createPlayer(PlayerDTO player);
     
     public PlayerDTO getPlayer(Long id);
     
@@ -26,5 +29,6 @@ public interface IPlayerService extends IUserService{
     
     public List<MatchDTO> getPlayersMatches();
     
+    public boolean checkName(String name);
     
 }

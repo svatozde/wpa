@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="cz.cvut.kbss_wpa-jpa-spring-jsf_war_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>cz.cvut.kbss.wpa.badminton.model.Admin</class>
+    <class>cz.cvut.kbss.wpa.badminton.model.Enroll</class>
+    <class>cz.cvut.kbss.wpa.badminton.model.League</class>
+    <class>cz.cvut.kbss.wpa.badminton.model.Match</class>
+    <class>cz.cvut.kbss.wpa.badminton.model.Note</class>
+    <class>cz.cvut.kbss.wpa.badminton.model.Notification</class>
+    <class>cz.cvut.kbss.wpa.badminton.model.Place</class>
+    <class>cz.cvut.kbss.wpa.badminton.model.Player</class>
+    <class>cz.cvut.kbss.wpa.badminton.model.Proposal</class>
+    <class>cz.cvut.kbss.wpa.badminton.model.Set</class>
+    <class>cz.cvut.kbss.wpa.badminton.model.User</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/wpa2"/>
+      <property name="javax.persistence.jdbc.password" value="derby"/>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="javax.persistence.jdbc.user" value="derby"/>
+      <property name="eclipselink.ddl-generation" value="create-tables"/>
+    </properties>
+  </persistence-unit>
+</persistence>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Sign in</title>
+    </h:head>
+    <h:body>
+        <ui:composition template="./WEB-INF/includes-templates/wpa-template.xhtml">
+            <ui:define name="content">
+                <h1>Student</h1>
+                <h:form>
+                    <h:panelGrid columns="3" columnClasses="dataLabel,,">
+                        
+
+                        <h:outputText value="#{msgs.username}:" />
+                        <h:inputText value="#{signin.player.username}" id="un" label="#{msgs.username}" required="true" requiredMessage="#{msgs.required_message}">
+                            <f:validateLength minimum="2"/>
+                            <f:validator validatorId="usernameValidator" />
+                        </h:inputText>
+                        <h:message for="un" errorClass="errorRequired"/>
+
+                        <h:outputText value="#{msgs.password}:" rendered="#{students.student.id == null}"/>
+                        <h:inputSecret value="#{signin.player.password}" id="pw" label="#{msgs.password}" required="true" requiredMessage="#{msgs.required_message}" rendered="#{students.student.id == null}"/>
+                        <h:message for="pw" errorClass="errorRequired" rendered="#{students.student.id == null}"/>
+                        
+                        <h:outputText value="#{msgs.birthnumber}:" />
+                        <p:calendar value="#{signin.player.dateOfBirth}" id="bn" label="#{msgs.birthnumber}" required="true" disabled="#{students.student.id != null}" validator="birthnumberValidator" />
+                        <h:message for="bn" errorClass="errorRequired"/>
+
+                     
+
+                    </h:panelGrid>
+                    <h:commandButton type="submit" value="#{msgs.save}" action="#{students.saveStudent}"/>
+                    <h:commandLink action="students" value="#{msgs.back_student_list}" immediate="true" />
+                    <h:messages globalOnly="true"/>
+                </h:form>
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>
+

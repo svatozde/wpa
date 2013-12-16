@@ -132,10 +132,11 @@ public class GenericHibernateJpaDAO implements GenericDAOIface, Serializable {
 
     public <ENTITY> ENTITY getByPropertyUnique(String property, Object value, Class<ENTITY> clazz) {
         ENTITY e;
+        EntityManager em = getEntityManager();
         if (value == null) {
-            e = clazz.cast(getEntityManager().createQuery("FROM " + clazz.getSimpleName() + " WHERE " + property + " IS NULL" ).getSingleResult());
+            e = clazz.cast(em.createQuery("FROM " + clazz.getSimpleName() + " WHERE " + property + " IS NULL" ).getSingleResult());
         } else {
-            e = clazz.cast(getEntityManager().createQuery("FROM " + clazz.getSimpleName() + " WHERE " + property + " = :value" ).setParameter("value", value).getSingleResult());
+            e = clazz.cast(em.createQuery("FROM " + clazz.getSimpleName() + " WHERE " + property + " = :value" ).setParameter("value", value).getSingleResult());
         }
         return e;
     }

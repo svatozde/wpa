@@ -30,7 +30,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 @DiscriminatorValue(value = "user")
 public class User extends AbstractEntity {
 
-    @Column(length = 40, nullable = false)
+    @Column(length = 40, nullable = false,unique = true)
     private String username;
 
     @Column(length = 40, nullable = false)

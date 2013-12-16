@@ -16,6 +16,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class AbstractService {
     
     @Autowired
-    public GenericDAOIface genericDAOIface; 
+    protected GenericDAOIface genericDAO; 
     
 }

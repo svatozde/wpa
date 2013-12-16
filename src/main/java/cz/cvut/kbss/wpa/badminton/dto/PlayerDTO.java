@@ -23,6 +23,10 @@ public class PlayerDTO extends UserDTO {
     protected List<NoteDTO> notes;
     protected List<EnrollDTO> enrolls;
 
+     public PlayerDTO(){
+         super(null, null, null);
+     }
+    
     public PlayerDTO(Long id, String username, String password,
             String name, String surname, Integer weigth, Integer height, Date dateOfBirth, List<NoteDTO> notes, List<EnrollDTO> enrolls) {
         super(id, username, password);

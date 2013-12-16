@@ -3,17 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package cz.cvut.kbss.wpa.badminton.service;
 
 import cz.cvut.kbss.wpa.badminton.dto.UserDTO;
+import org.springframework.stereotype.Component;
 
 /**
  *
  * @author jan
  */
+@Component("UserService")
 public interface IUserService {
-    
-    public UserDTO createUser(UserDTO user);
-    
+
+    public void createUser(UserDTO user);
+
+    public boolean checkUsername(String name);
+
 }
